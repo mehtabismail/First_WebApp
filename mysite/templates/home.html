@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is Home</h1>
+<a href="{% url 'Result' %} ">Click Here for Result</a>
+<br></br>
+<form action="{% url 'Result' %}">
+    {% csrf_token %}
+    <input type="text" name="user_name">
+    <br></br>
+    <input type="text" name="user_age">
+    <br></br>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>
